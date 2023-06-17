@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    scroll-behavior: smooth;
+}
+:root{
+    --font-primary: 'Inter', sans-serif;
+    --color-primary: #333;
+    --color-secondary:#000;
+    --color-tertiary:#666;
+    --color-light: #c4bdbd;
+    --color-background:#f4f4f4;
+}
+body{
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 14px;
+    background-color: var(--color-background);
+}
+header{
+    width: 100%; 
+    height: 120px;
+    border-bottom: 1px solid var(--color-light);
+}
+header img{
+    max-width: 125px;
+    margin: 10px 15px;
+    float: left;
+}
+.header-top{
+    max-width: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    text-align: center;
+    padding: 5px;
+}
+.menu ul{
+    list-style: none;    
+    padding: 12px 0px;
+    float: left;
+    margin: 20px 0 40px 310px;
+}
+.menu ul li{
+    display: inline;
+    padding: 0 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 12px;
+}
+.menu ul li a:hover{
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+main{
+    clear: both;
+    width: 70%;
+    float: left;
+    height: 100vh;
+    padding: 0 25px;
+    overflow: auto;    
+}
+.categoria{
+    padding-bottom: 18px;
+}
+section .card-product{
+    max-width: 32%;
+    border: 1px solid var(--color-light);
+    margin: 0 10px 45px 0;
+    padding: 12px;
+    float: left;
+}
+section .card-product img{
+    width: 100%;
+}
+section .card-product .descripcion{
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    padding-bottom: 4px;
+}
+section .card-product .precio{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+section .card-product-footer button{
+    width: 50%;
+    float: left;
+    height: 30px;
+    border: 1px solid var(--color-light);
+    cursor: pointer;
+}
+section .card-product-footer button:hover{
+    background-color: var(--color-light);
+    color: white;
+}
+aside{
+    width: 30%;
+    float: left;
+    margin-top: 45px;
+    padding-left: 30px;
+    height: 100vh;
+}
+aside section nav ul{
+    list-style: none;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+aside section nav a{
+    text-decoration: none;
+    color: var(--color-tertiary);
+    font-size: 18px;
+    padding-bottom: 19px;
+}
+aside section nav li:hover{
+    border-bottom: 1px solid var(--color-light);
+}
+aside section nav li a:hover{
+    color: var(--color-secondary);
+}
+aside form{
+    max-width: 80%;
+    border-top: 1px solid var(--color-light);
+    padding: 10px 0;
+}
+aside form p{
+    font-size: 18px;
+    color: var(--color-tertiary);
+    margin-bottom: 8px;
+}
+aside form input, aside form textarea{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-light);
+}
+aside form textarea{
+    height: 100px!important;
+    resize: none;
+}
+aside form button{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid var(--color-light);
+}
+aside form button:hover{
+    background-color: var(--color-light);
+    color: white;
+}
+footer{
+    clear: both;
+    width: 100%;
+    border-top: 1px solid var(--color-light);
+    padding: 20px 10px;
+}
+footer .suscripcion{
+    max-width: 50%;
+    float: left;
+    margin: 0 0 20px 400px;
+    color: var(--color-tertiary);
+    text-align: right;
+}
+footer .suscripcion .sumate{
+    font-weight: bold;
+}
+footer .suscripcion .suscribite{
+    font-size: 12px;
+}
+footer .suscripcion input{
+    border: 1px solid var(--color-light);
+    margin-top: 5px;
+    padding: 5px;
+}
+footer .redes{
+    max-width: 50%;
+    float: right;
+    margin-right:450px;
+    text-align: left;
+}
+footer .redes p{
+    color: var(--color-tertiary);
+    font-weight: bold;
+}
+footer .redes a{
+    text-decoration: none;
+    color: var(--color-tertiary);
+    padding-right: 6px;
+}
+footer .redes a:hover{
+    color: var(--color-secondary);
+}

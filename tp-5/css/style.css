@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    color: var(--color-secondary);
+    
+}
+
+:root{
+    --font-primary: 'Sofia Sans Semi Condensed', sans-serif;
+    --font-secondary: 'Miltonian Tattoo', cursive;
+    --color-primary: #faf6f0;
+    --color-secondary: #10141b;
+    --color-hover: #9f9fa0;
+    --background-color: #10141b;
+}
+
+
+.menu{
+    width: 100%;
+    height: 50px; 
+    font-size: 18px; 
+    font-weight: 700;
+    border-bottom: 2px solid var(--color-hover);
+}
+.menu ul{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: 12px 0px;
+    position: relative;
+}
+.menu ul a{
+    display: block;
+    text-decoration: none;
+}
+.menu ul li{
+    position: relative;
+    float: left;    
+    padding: 0px 8px;
+}
+.menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-primary);
+}
+.menu ul ul li{
+    float: none;
+    width: 160px;
+}
+.menu ul ul a{
+    padding: 10px;
+}
+.menu ul li:hover > ul{
+    display: block;
+}
+.menu ul li a:hover{
+    color: var(--color-hover);
+    border-bottom: 1px solid var(--color-secondary);
+}
+.menu ul ul a:hover{
+    color: var(--color-hover);
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+
+header{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.titulo{
+    font-family: var(--font-secondary);
+    padding: 10px 0px;
+    font-size: 2rem;
+}
+
+
+main{
+    width: 70%;
+    float: left;
+    padding:10px;
+}
+main img{
+    max-width: 100%;  
+    padding: 10px;
+}
+main section{
+    padding: 10px 30px 20px 10px;
+}
+main section p{
+    text-align: justify;
+    margin-bottom: 16px;
+    line-height: 200%;
+}
+
+
+aside{
+    width: 30%;
+    /*height: 100vh;*/
+    float: left;
+    padding: 30px;
+    border-left: 1px solid var(--color-hover);
+}
+aside h3{
+    padding-bottom: 10px;
+}
+aside ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+aside ul li{
+    padding: 5px;
+}
+aside ul li a{
+    text-decoration: none;
+}
+aside ul li a:hover{
+    border-bottom: 1px solid var(--color-secondary); 
+    color: var(--color-hover);
+}
+
+
+article{
+    width: 100%;
+    height: 100vh;
+    border-top: 1px solid var(--color-secondary);   
+    padding: 10px;
+}
+article img{
+    border: 1px solid var(--color-hover);
+    float: left;
+    max-width: 40%;
+    margin-right: 10px;
+}
+.nombre{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.precio{
+    font-style: italic;
+    padding-bottom: 10px;
+}
+.colores li{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius:50%;
+}
+.color1{
+    background-color: maroon;
+}
+.color2{
+    background-color: yellow;   
+}
+
+
+footer{  
+    clear: both;  
+    border-top: 1px solid var(--color-secondary);
+    background-color: #10141b;
+}
+.container-footer{
+    padding: 20px 40px;   
+}
+.container-footer h6{
+    font-weight: 200;
+    padding-bottom: 3px;
+    color: var(--color-primary);
+}
+.container-footer p{
+    font-size: 10px;
+    padding-bottom: 3px;
+    color: var(--color-primary);  
+}

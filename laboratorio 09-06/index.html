@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 09/06</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo">
+            <a href="">Cake Shop</a>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="catalogo.html">Catalog</a></li>
+                <li><a href="#">How to order</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-btn">Login</button>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="hero-container">
+                <h1>Homemade cakes ♥</h1>
+                <button class="hero-btn">Order now!</button>
+            </div>
+
+            <section class="catalogo-container">
+                <div class="catalogo-title">Catalog</div>
+                <div>
+                    <nav>
+                        <ul class="nav-list-catalago">
+                            <li><a href="#">Popular cakes</a></li>
+                            <li><a href="#">Celebration cakes</a></li>
+                            <li><a href="#">Baby cakes</a></li>
+                            <li><a href="#">Wedding cakes</a></li>
+                            <li><a href="#">Special cakes</a></li>
+                        </ul>
+                    </nav>                    
+                </div>
+                <div class="main-card">
+                    <div class="card-product">                
+                        <span class="img-1"></span>
+                        <div>
+                            <div class="card-text">Carrot Cake</div>
+                            <div class="card-precio">$ 180</div>
+                            <button class="card-button">Order</button>
+                        </div>
+                    </div>
+                    <div class="card-product">                
+                        <span class="img-2"></span>
+                        <div>
+                            <div class="card-text">Chocolate Cake</div>
+                            <div class="card-precio">$ 120</div>
+                            <button class="card-button">Order</button>
+                        </div>
+                    </div>
+                    <div class="card-product">                
+                        <span class="img-3"></span>
+                        <div>
+                            <div class="card-text">Strawberry Cake</div>
+                            <div class="card-precio">$ 150</div>
+                            <button class="card-button">Order</button>
+                        </div>
+                    </div>      
+                </div>
+                <div class="button-view">
+                    <form action="catalogo.html">
+                      <input type="submit" name="button" value="View all">
+                    </form>
+                  </div>
+            </section>
+
+            <div class="main-chefs">
+                <div class="chefs-description">
+                    <p class="chefs-about">About us</p>
+                    <p class="chefs-name">Florence Smith</p>
+                    <p class="chefs-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eaque aliquid necessitatibus quas aspernatur repellat exercitationem, magnam nulla maiores et blanditiis, qui reprehenderit obcaecati accusantium deleniti unde possimus corporis optio!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eaque aliquid necessitatibus quas aspernatur repellat exercitationem, magnam nulla maiores et blanditiis, qui reprehenderit obcaecati accusantium deleniti unde possimus corporis optio!
+                    </p>
+                </div>
+                <span class="chefs-img"></span>
+            </div>
+
+            <div class="order-container">
+                <span class="img-order"></span>
+                <div class="order-how">
+                    <p class="order-title">How to order</p>
+                    <p class="order-text">Please leave your contact information and we'll get back to you shortly.</p>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone">
+                    <button type="submit" class="order-btn">Send</button>
+                </div>
+            </div>
+            
+        </div>        
+    </main>
+    <footer class="footer-container">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+    </footer>
+</body>
+</html>
