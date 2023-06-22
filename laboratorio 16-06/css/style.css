@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+a{
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+:root{
+    --color-primary: #055902;
+    --color-secondary: #AFBF73;
+    --color-tertiary: #eeffe9;
+   /*  --color-tertiary: #ece8d2;
+    --color-complementary-1 : #f3fcf2;*/
+   --color-complementary-1 : #BFB9A4; 
+    --color-complementary-2: #8C6F4A;
+
+}
+.header-container{
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+    width: 100%;
+    height: 60px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-secondary);
+    background-color: var(--color-tertiary);
+}
+.logo{
+    margin: 0 40px;
+}
+.logo a{
+    font-size: 20px;
+    color: var(--color-secondary);
+}
+.logo i{
+    color: var(--color-secondary);
+}
+.nav-list ul{
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    padding-right: 15px;
+}
+.nav-list li a:hover{
+    color: var(--color-primary);
+}
+body{
+    background-color: var(--color-tertiary);
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 50px 0px;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+.title{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: var(--color-secondary);
+}
+.main-content-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 500px 500px 200px;
+    gap: 10px;
+    margin-right: 50px;
+} 
+.main-content-item{
+    background-color: var(--color-secondary);
+}
+.main-content-grid .item-5{
+    grid-column: 1 / span 2; 
+    padding: 20px;
+}
+.main-content-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title-about{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.main-aside{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.main-aside-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    gap: 10px;  
+}
+.main-aside-grid .main-aside-item{
+    display: flex;
+    flex-direction: column;  
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid var(--color-secondary);
+    text-align: center;  
+}
+.aside-item-img{
+    width: 179px;
+    height: 179px;
+    margin-bottom: 5px;
+}
+.main-aside-grid .aside-item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aside-item-name{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color-primary);
+}
+.aside-item-price{
+    margin-bottom: 6px;
+    color: var(--color-complementary-2);
+}
+.order-add{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.fav{
+    display: none;
+}
+.fav i{
+    padding-left: 2px;
+}
+.btn{
+    font-size: 14px;
+    text-align: center;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    width: 70px;
+    height: 30px;
+    margin: 7px;
+    padding: 7px 0;
+    border: none; 
+}
+.btn:hover{
+    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-primary);
+}
+.order-add:hover .fav{
+    display: inline-block;
+}
+
+.footer-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+    background-color: var(--color-secondary);
+}
+.footer-form-container{
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    width: 65%;
+}
+.footer-text{
+    font-size: 18px;
+    margin-right: 7px;
+    color: var(--color-tertiary);
+}
+.footer-form input{
+    width: 200px;
+    height: 32px;
+    padding: 5px;
+}
+.form-btn{
+    font-size: 14px;
+    width: auto;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    color: var(--color-primary);
+    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-primary); 
+}
+.form-btn:hover{
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+}
+.footer-social{
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+    width: 30%;
+}
+.footer-text-social{
+    font-size: 18px;
+    margin-right: 15px;
+    color: var(--color-tertiary);
+}
+.footer-social i{
+    font-size: 18px;
+    padding-right: 15px;
+    color: var(--color-tertiary);
+}
+.footer-social i:hover{
+    color: var(--color-primary);
+}
