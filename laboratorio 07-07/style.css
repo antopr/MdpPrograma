@@ -1,0 +1,23 @@
+.container-1{
+    display: flex;
+    flex-direction: column;    
+}
+.container-2{
+    display: flex;
+    margin-bottom: 20px;
+}
+.uno{
+    width: 100%;
+    height: 100px;
+    background-color: #5EB342;
+}
+.dos{
+    width: 50%;
+    height: 100px;
+    background-color: #ACFF91;
+}
+.tres{
+    width: 50%;
+    height: 100px;
+    background-color: #99FF78;
+}
