@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #212529;
+    text-decoration: none;
+    cursor: pointer;
+}
+.no-padding{
+    padding: 0;
+}
+.nav-social{
+    background-color: #212529;
+    z-index: 999;
+    position: fixed;
+}
+.nav-social i{
+    color: #adb5bd;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+.nav-social i:hover{
+    color: #ffffff;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.producto{
+    position: relative;
+}
+.producto-boton{
+    display: none;
+}
+.producto-boton button{
+    position: absolute;
+    bottom: 50%;
+    left: 25%;
+}
+.producto:hover .producto-boton{
+    display: block;
+}
+.informacion i{
+    font-size: 45px;
+}
+.titulo{
+    font-size: 25px;
+    font-weight: bold;
+}
+.nombre{
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.insta{
+    font-size: 28px;
+}
+.seguinos-insta a:hover{
+    color: #adb5bd;
+}
+.direccion{
+    font-size: 12px;
+}
+.nav-footer ul{
+    display: flex;
+    list-style: none;
+    margin: 5px 0 20px 0;
+}
+.nav-footer li{
+    padding-right: 25px;
+}
+.nav-footer li a:hover{
+    color: #adb5bd;
+}
+.social-icons a, .social-icons i{
+    margin: 20px 0;
+    padding-right: 30px;
+    font-size: 16px;
+}
+.social-icons i:hover{
+    color: #adb5bd;
+}
+
+/*Modal*/
+.titulo-modal{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.modal-precio{
+    font-size: 25px;
+    margin-bottom: 0px !important;
+}
+.modal-cuotas span{
+    font-size: 16px;
+    color: rgb(253, 147, 164);
+}
+.modal-talles{
+    font-size: 12px;
+    margin-bottom: 0px !important;
+}
+.rosa{
+    background-color: palevioletred;
+}
+.lila{
+    background-color: purple;
+}
+.celeste{
+    background-color: paleturquoise;
+}
+.modal-colores div{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.fav:hover{
+    color: palevioletred;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .titulo{
+        font-size: 15px;
+    }
+}

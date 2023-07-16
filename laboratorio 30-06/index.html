@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 30/06</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="border-bottom">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">             
+                    <li class="nav-item dropdown border-end border-start">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Por Producto
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Sweater</a></li>
+                          <li><a class="dropdown-item" href="#">Pants</a></li>
+                          <li><a class="dropdown-item" href="#">Remeras</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown border-end">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Por Licencia
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Star wars</a></li>
+                      <li><a class="dropdown-item" href="#">Harry Potter</a></li>
+                      <li><a class="dropdown-item" href="#">Disney</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown border-end">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Por Talle
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">S</a></li>
+                          <li><a class="dropdown-item" href="#">M</a></li>
+                          <li><a class="dropdown-item" href="#">M</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item border-end">
+                        <a class="nav-link" href="#">Sale!</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <button class="btn btn-outline-dark" type="submit">Carrito / $0 <i class="fa-solid fa-cart-shopping"></i></button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <div class="nav-social">
+      <div class="d-flex flex-column">        
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <main>
+      <!--Hero-->
+      <section class="container-fluid">
+          <div class="row">
+            <!--Carrousel-->
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/sweater-1.jpg" class="d-block w-100" alt="Sweater-Stars">
+                    <div class="carousel-caption d-none d-md-block py-4">
+                      <button type="button" class="btn btn-outline-light">Ver más</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/sweater-2.jpg" class="d-block w-100" alt="Sweater-Stars">
+                    <div class="carousel-caption d-none d-md-block py-4">
+                      <button type="button" class="btn btn-outline-light">Ver más</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/sweater-3.jpg" class="d-block w-100" alt="Sweater-Stars">
+                    <div class="carousel-caption d-none d-md-block py-4">
+                      <button type="button" class="btn btn-outline-light">Ver más</button>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <!--Ends Carrousel-->
+
+            <!--Aside-Hero-->
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="row">
+                <div class="col-4 no-padding">
+                  <div class="producto">
+                    <img class="d-block w-100" src="img/pants-1.webp" alt="pants">
+                    <div class="producto-boton">
+                      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#verMasModal">Ver más</button>
+                    </div>
+                  </div>                  
+                </div> 
+
+                <div class="col-4 no-padding">
+                  <div class="producto">
+                    <img class="d-block w-100" src="img/remera-1.webp" alt="remera">
+                    <div class="producto-boton">
+                      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#verMasModal">Ver más</button>
+                    </div>
+                  </div>                  
+                </div>
+                
+                <div class="col-4 no-padding">
+                  <div class="producto">
+                    <img class="d-block w-100" src="img/pants-2.webp" alt="pants">
+                    <div class="producto-boton">
+                      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#verMasModal">Ver más</button>
+                    </div>
+                  </div>                  
+                </div>
+
+                <div class="col-4 no-padding">
+                  <div class="producto">
+                    <img class="d-block w-100" src="img/remera-2.webp" alt="remera">
+                    <div class="producto-boton">
+                      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#verMasModal">Ver más</button>
+                    </div>
+                  </div>                  
+                </div> 
+
+                <div class="col-4 no-padding">
+                  <div class="producto">
+                    <img class="d-block w-100" src="img/pants-3.webp" alt="pants">
+                    <div class="producto-boton">
+                      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#verMasModal">Ver más</button>
+                    </div>
+                  </div>                  
+                </div>
+                
+                <div class="col-4 no-padding">
+                  <div class="producto">
+                    <img class="d-block w-100" src="img/remera-3.webp" alt="remera">
+                    <div class="producto-boton">
+                      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#verMasModal">Ver más</button>
+                    </div>
+                  </div>                  
+                </div>                           
+              </div> <!--row-->
+            </div> <!--col-6-->              
+          </div>
+          <!--Ends Aside-Hero-->
+      </section>
+      
+      <!--Info-->
+      <section class="container my-5 py-5 informacion">
+        <div class="row">
+          <div class="col-lg-4 text-center">
+            <i class="fa-solid fa-credit-card pb-4"></i>
+            <h3>3 cuotas sin interés!</h3>
+            <p>Con tarjetas adheridas ahora3</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <i class="fa-solid fa-truck pb-4"></i>
+            <h3>Envío gratis!</h3>
+            <p>En pedidos mayores a 30.000 pesos</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <i class="fa-solid fa-shield pb-4"></i>
+            <h3>Diseños oficiales!</h3>
+            <p>Hecho en Argentina bajo licencia internacional</p>
+          </div>
+        </div>
+      </section>
+      <!--Ends Info-->
+      
+      <!--Mas diseños-->
+      <section class="container my-5">
+        <div class="row mb-2">
+          <div class="col-4"><hr></div>
+          <div class="col-4 text-center">
+            <p class="titulo text-md-center small">MÁS DISEÑOS INCREÍBLES</p>
+          </div>
+          <div class="col-4"><hr></div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2 col-md-4">
+            <div class="producto">
+              <img class="d-block w-100" src="img/cardigan.webp" alt="Pixar Toy Story Nubes Cardigan">
+              <div class="text-center">
+                <div class="nombre">Pixar Toy Story Nubes Cardigan</div>
+                <div class="precio">$32.899</div>
+              </div>
+              <div class="producto-boton">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#verMasModal">Ver más</button>
+              </div>
+            </div> 
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="producto">
+              <img class="d-block w-100" src="img/buzo.webp" alt="Pixar Toy Story Aliens Buzo Bordado">
+              <div class="text-center">
+                <div class="nombre">Pixar Toy Story Aliens Buzo Bordado</div>
+                <div class="precio">$32.899</div>
+              </div>
+              <div class="producto-boton">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#verMasModal">Ver más</button>
+              </div>
+            </div> 
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="producto">
+              <img class="d-block w-100" src="img/polera-1.webp" alt="Cartoon Network El Laboratorio de Dexter Polera">
+              <div class="text-center">
+                <div class="nombre">Cartoon Network Dexter Polera</div>
+                <div class="precio">$13.899</div>
+              </div>
+              <div class="producto-boton">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#verMasModal">Ver más</button>
+              </div>
+            </div> 
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="producto">
+              <img class="d-block w-100" src="img/buzo-3.webp" alt="Cartoon Network Coraje El Perro Cobarde Buzo">
+              <div class="text-center">
+                <div class="nombre">Cartoon Network Coraje El Perro Cobarde Buzo</div>
+                <div class="precio">$32.899</div>
+              </div>
+              <div class="producto-boton">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#verMasModal">Ver más</button>
+              </div>
+            </div> 
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="producto">
+              <img class="d-block w-100" src="img/buzo-4.webp" alt="Ositos Cariñositos Azul Buzo">
+              <div class="text-center">
+                <div class="nombre">Ositos Cariñositos Azul Buzo</div>
+                <div class="precio">$35.899</div>
+              </div>
+              <div class="producto-boton">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#verMasModal">Ver más</button>
+              </div>
+            </div> 
+          </div>
+          
+          <div class="col-lg-2 col-md-4">
+            <div class="producto">
+              <img class="d-block w-100" src="img/buzo-2.webp" alt="Cartoon Network Chicas Superpoderosas Buzo">
+              <div class="text-center">
+                <div class="nombre">Cartoon Network Chicas Superpoderosas Buzo</div>
+                <div class="precio">$32.899</div>
+              </div>
+              <div class="producto-boton">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#verMasModal">Ver más</button>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section>
+      <!--Ends Ultimos Productos-->
+      
+      <!--Seguinos-->
+      <section class="container my-5">
+        <div class="row mb-2">
+          <div class="col-4"><hr></div>
+          <div class="col-4 text-center">
+            <p class="titulo">¡SEGUINOS EN INSTAGRAM!</p>
+          </div>
+          <div class="col-4"><hr></div>
+        </div>
+
+        <div class="row">          
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-sm-2 border border-1 border-black d-flex flex-column justify-content-center align-content-center align-items-center text-center seguinos-insta">            
+            <img class="py-5" src="img/logo-2.png" alt="this-is-feliz-navidad-logo">            
+            <a href="#" class="insta"><i class="fa-brands fa-instagram pe-2 pb-3"></i>thisisfeliznavidad</a>            
+            <button type="button" class="btn btn-outline-dark align-self-center mb-5">SEGUINOS</button>            
+            <a href="#" class="pb-1"><i class="fa-solid fa-phone pe-1"></i>1125556000 (lun a vier 10 a 17hs)</a>            
+            <a href="#" class="mb-2"><i class="fa-regular fa-envelope pe-1"></i>hola@thisisfeliznavidad.com</a>            
+            <p class="direccion px-4"><i class="fa-solid fa-location-dot pe-1"></i> AV CÓRDOBA (Av Córdoba 4517), RECOLETA (Talcahuano 996), ABASTO SHOPPING, BARRIO CHINO, ALTO PALERMO.</p>                        
+          </div>
+
+          <div class="col-lg-8 col-md-6 col-sm-12">
+            <div class="row ps-lg-4 ps-md-2 ps-sm-0 ">
+              <div class="col-lg-4 col-md-6 col-sm-4 no-padding">
+                <img class="d-block w-100" src="img/insta-1.jpg" alt="">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-4 no-padding">
+                <img class="d-block w-100" src="img/insta-2.jpg" alt="">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-4 no-padding">
+                <img class="d-block w-100" src="img/insta-3.jpg" alt="">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-4 no-padding">
+                <img class="d-block w-100" src="img/insta-4.jpg" alt="">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-4 no-padding">
+                <img class="d-block w-100" src="img/insta-5.jpg" alt="">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-4 no-padding">
+                <img class="d-block w-100" src="img/insta-6.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid border-top border-dark-subtle d-flex flex-column justify-content-center align-content-center align-items-center">
+      <div class="row mt-3">
+        <div class="col social-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nav-footer">
+          <ul>
+            <li><a href="#">Locales</a></li>
+            <li><a href="#">Cuotas sin interés</a></li>
+            <li><a href="#">Envío gratis</a></li>
+            <li><a href="#">Talles</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!--Modal-->
+    <div class="modal fade" id="verMasModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img class="w-50" src="img/logo-2.png" alt="this-is-feliz-navidad-logo">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="d-block w-100" src="img/pants-1.webp" alt="pants">
+              </div>
+              <div class="col-lg-6">
+                <p class="titulo-modal">Ositos Cariñositos Rosa Pants</p>
+                <p class="modal-precio">$16.899</p>
+                <p class="modal-cuotas"><span><i class="fa-regular fa-credit-card"></i> 3 cuotas sin interés </span> de $5.633</p>
+                <p class="modal-talles">Talles todavia disponibles</p>
+                <p class="p-0 mb-1">XS - S - M - L - XL - XXL - XXXL</p>
+                <h5 class="modal-talles">Colores</h5>
+                <div class="modal-colores d-flex justify-content-start align-content-center my-2">
+                  <div class="rosa"></div>
+                  <div class="lila"></div>
+                  <div class="celeste"></div>        
+                </div>
+                <button class="btn btn-dark my-3">Si, me lo llevo!</button>
+                <i class="fa-solid fa-heart px-2 fav"></i>
+                <h6>Descripción</h6>
+                <h6 class="m-0">Diseño original de This is Feliz Navidad®</h6>
+                <p class="modal-items m-0">- Super comodos, livianos y frescos. Con cintura elastizada y bolsillos a los costados</p>
+                <p class="modal-items m-0">- Talles sin género de XS a XXXL.</p>
+                <p class="modal-items m-0">- Estampado y confeccionado en talleres éticamente responsables en Buenos Aires.</p>
+                <p class="modal-items">- No decolora y es súper fácil de lavar en el lavarropas con agua fría.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
