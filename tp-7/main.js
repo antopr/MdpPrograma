@@ -1,16 +1,25 @@
-const btnAgregar = document.getElementById('btn-agregar');
-const btnEliminar = document.getElementById('btn-eliminar');
-const agregoItem = document.getElementById('item');
-
+const inputItems = document.getElementById('inputItems');
+const btnAgregar = document.getElementById('btnAgregar');
+const listItems = document.getElementById('listItems');
 
 btnAgregar.addEventListener('click', function(){
-    //let inputValue = document.querySelectorAll('.input-form');
-    let inputValue = document.getElementById('name').value;
-    agregoItem.innerHTML = inputValue;
-    btnEliminar.classList.remove("invisible");
-});
+    const divElement = document.createElement("div");
+        divElement.className = "col my-4 d-flex justify-content-center align-content-cente align-items-center";
+    const pElement = document.createElement("p");
+        pElement.className = "me-5";
+    const buttonElement = document.createElement("button");
+        buttonElement.innerText = "Eliminar";
+        buttonElement.className = "btn btn-danger";
 
-btnEliminar.addEventListener('click', function(){
-    agregoItem.remove()
-    btnEliminar.classList.add("invisible");
+    pElement.innerText = inputItems.value;
+    divElement.appendChild(pElement);
+    divElement.appendChild(buttonElement);
+    listItems.appendChild(divElement);
+
+    buttonElement.addEventListener('click',function(){
+        divElement.remove();
+    });
+
+    inputItems.focus();
+    inputItems.value="";
 });
